@@ -1,17 +1,15 @@
-import React from 'react';
-import styles from './ProjectStyles.module.css';
-import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
-import ProjectCard from '../../common/ProjectCard';
+import ProjectCard from "../../components/ProjectCard";
+import Amazon from "../../assets/Projects/Screenshot 2025-07-24 192534.png"
+import typer from "../../assets/Projects/Screenshot 2025-07-24 192331.png"
+import Wrapper from "../../components/Wrapper";
 
 function Projects() {
   return (
-    <section id="projects" className={styles.container}>
-      <h1 className="sectionTitle">Projects</h1>
-      <div className={styles.projectsList}>
-        <ProjectCard src={viberr} link="https://github.com/Khaja4" h3="Viberr" p="A streaming app for music lovers" />
-        <ProjectCard src={freshBurger} link="https://github.com/Khaja4" h3="Fresh Burger" p="Modern UI food delivery app" />
-        <ProjectCard src={viberr} link="https://github.com/Khaja4" h3="Viberr Clone" p="An improved version with better UI" />
+    <section id="projects" className="mx-[200px] dark:text-white">
+      <h1 className="text-4xl text-center font-bold font-stardom m-12">RECENT PROJECTS</h1>
+      <div className="border-b-2 border-zinc-600">
+        <ProjectCard src={Amazon} link="https://github.com/dashboard" title="Amazon Clone" tags={["react", "CSS", "Typescript"]}/>
+        <ProjectCard src={typer} link="https://github.com/dashboard" title="Type Test" tags={["react", "CSS", "Typescript"]}/>
       </div>
     </section>
   );
